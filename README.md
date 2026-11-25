@@ -8,7 +8,8 @@ This task required us to implement an AI feature. I chose to use Unity's Behavio
 
 To create the visitor AI, I used Unity's Behavior Tree as it allows me to give the NPC different behaviours and decisions in the future. I started with a sequence node which allows the NPC to complete different tasks in a specific order. 
 
-![VisitorBehaviorTree]()
+![VisitorBehaviorTree](https://raw.githubusercontent.com/kdogz9/AI-integration-mini-project/refs/heads/main/VisitorBehaviorTree.png)
+**Figure 1.** Visitor Behavior Tree. 
 
 I then created a custom C# action called `FindOccupiedTankAction` which checks the exisiting `RescueManager` script to identify whether any of the tanks contained fish. When a fish is found in the tank, the script assigns the tank's `VisitorStandPoint` to a Blackboard variable called `TargetTank`. 
 ```C# 
